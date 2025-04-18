@@ -5,7 +5,7 @@ import Button from "./components/button";
 export default function Home() {
   return (
     <div>
-      <Link href="/blog">Blog</Link>
+      <Link href="/blog">Blog</Link> 
       
       
       
@@ -16,3 +16,5 @@ export default function Home() {
     </div>
   );
 }
+
+console.log(Home,"jhjhj")

@@ -27,16 +27,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div style={{backgroundColor:"pink", height:"30px"}}>
-        <Link href="/post"> { <Button> Post</Button>}</Link>
-       <Link href="/contact"> { <Button>Contact</Button>}</Link>
-       <Link href="/docs"> { <Button>Docs</Button>}</Link>
-        {children}
+        <div style={{ backgroundColor: "pink", height: "30px" }}>
+          <Link href="/post"> {<Button backgroundColor="blue" textColor="white"> Post</Button>}</Link>
+          <Link href="/contact"> {<Button>Contact</Button>}</Link>
+          <Link href="/docs"> {<Button>Docs</Button>}</Link>
+          {children}
 
         </div>
-        
+
       </body>
     </html>
   );

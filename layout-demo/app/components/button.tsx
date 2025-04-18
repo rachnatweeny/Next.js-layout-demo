@@ -1,9 +1,7 @@
-export default function Button({ children }: { children: React.ReactNode }) {
+export default function Button({ children, backgroundColor = "black", textColor="white" }: { children: React.ReactNode,backgroundColor?: string, textColor?: string }) {
     return (
-        <button>
+        <button style={{backgroundColor,color:textColor, cursor:"pointer", margin:"5px", padding:"5px"}}>
             {children}
-        
-
         </button>
     );
 }
